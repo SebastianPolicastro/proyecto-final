@@ -11,10 +11,11 @@
 /*  HEADER*/
 
 .nav-bar{
-    background-color: white;
+    background-color: #0D448C;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 4.6875rem;
 }
 
 
@@ -25,8 +26,9 @@
 
 .nav-item a{
     text-decoration: none;
-    font-size: 1.5625rem;
-    font-family: Rubik;
+    font-size: 1.25rem;
+    font-family: Rubik, sans-serif;
+    color: white;
 }
 
 .nav-ul{
@@ -48,20 +50,87 @@
 
 .contenedor-principal{
     display: flex;
-    background-image: url("../assets/img/banner.png");
+    flex-direction: column;
+    background-image: url("../assets/img/banner2.png");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 100%;
-    height: 30rem;
+    height: 20rem;
     align-items: center;
+    justify-content: center;
 }
+
 
 .contenedor-principal h1{
     font-size: 2.5rem;
     color: white;
-    margin-left: 1.875rem;
-    font-family: Roboto;
+    margin-bottom: 1.25rem;
+    font-family: Roboto, sans-serif;
 }
 
+.contenedor-principal p{
+    font-size: 1.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.ctn-inicio{
+    width: 56.25rem;   
+}
+
+
+.contenedor-secundario{
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    width: 100%;
+    background-color: #080E26;
+    align-items: center;
+    justify-content: center;
+} 
+.contenedor-secundario h2{
+    font-size: 2.8125rem;
+    font-family: Rubik, sans-serif;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.contenedor-secundario p{
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ctd-titulo{
+    width: 56.25rem;
+}
+
+.ctd-parrafos{
+    margin-top: 1.25rem;
+    display: grid;
+    justify-content: center;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 23.625rem);
+    grid-template-rows: repeat(2, 12.5rem);
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4"
+    
+    
+    ;
+}
+
+.ctd-parrafos h3{
+    color: white;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.item{
+    background-color: #2A3659;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+}
 
 .contenedor-principal-b{
     display: flex;
@@ -126,14 +195,6 @@
 
 
 
-.contenedor-secundario{
-    display: flex;
-    padding: 1.25rem;
-    flex-direction: column;
-    width: 100%;
-    background-color: aliceblue;
-} 
-
 .contenedor-principal-t h1{
     font-size: 2.5rem;
     color: #034C8C;
@@ -142,30 +203,6 @@
     text-align: center;
 }
 
-
-.ctd-parrafo{
-    display: flex;
-    align-items: center;
-    width: 50%;
-    justify-content: space-evenly;
-    margin-left: 31.25rem;
-    padding: 1.25rem;
-}
-
-.ctd-parrafo p{
-    font-size: 1.6875rem;
-}
-
-.ctd-parrafo li{
-    font-size: 1.1875rem;
-}
-
-
-.ctd-parrafo img{
-    height: 250px;
-    border-radius: .625rem;
-    box-shadow: 20px 20px 5px gray;
-}
 
 .card-container {
     display: flex;
@@ -204,13 +241,6 @@
 
 
 
-.contenedor-secundario h2{
-    font-size: 2.8125rem;
-    font-family: Rubik;
-    text-align: center;
-    color: blue;
-    padding: 1.25rem;
-}
 
 /* Footer */
 
