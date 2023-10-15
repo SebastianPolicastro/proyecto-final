@@ -64,6 +64,7 @@
 
 /* MAIN */
 
+
 .contenedor-principal{
     display: flex;
     flex-direction: column;
@@ -238,17 +239,65 @@
     margin-left: 1.875rem;
     font-family: Roboto;
 }
-.contenedor-secundario-b h2{
-    font-size: 2.8125rem;
-    font-family: Rubik;
-    text-align: center;
-    color: blue;
-    padding: 1.25rem;
+
+.contenedor-secundario-b-t{
+    width: 100%;
+    height: 100%;
+    margin: .625rem auto;
+    padding: 6.25rem;
 }
 
-.contenedor-secundario-b p{
-    font-size: 1.6875rem;
-    text-align: center;
+
+.contenedor-secundario-b-t h2{
+    font-size: 2.8125rem;
+    font-family: Rubik;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.contenedor-secundario-b-t p{
+    color: white;
+    font-size: 1.25rem;
+}
+
+.contenedor-secundario-b{
+    display: flex;
+    width: 100%;
+    height: 31.25rem;
+    justify-content: space-evenly;
+}
+
+.contenedor-secu-b-p{
+    background-color: #080E26;
+    width: 65.5rem;
+    height: 100%;
+    border-radius: 1.875rem;
+    margin: 2.5rem auto;
+    padding: 1.25rem;
+}
+.ctn-secu div img{
+    width: 100%;
+    margin-bottom: 1.5625rem;
+    transition: all 0.3s;
+    border-radius: 1.875rem;
+}
+
+.ctn-secu div img:hover{
+    transform: scale(1.2);
+    filter: opacity(0.7);
+}
+
+.ctn-secu{
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+}
+
+
+.ctn-secu h3{
+    font-size: 1.5625rem;
+    margin-bottom: .625rem;
 }
 
 .contenedor-principal-c h1{
