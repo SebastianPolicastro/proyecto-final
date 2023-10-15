@@ -11,7 +11,7 @@
 /*  HEADER*/
 
 .nav-bar{
-    background-color: #0D448C;
+    background-color: #072752;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,11 @@
 
 .nav-item{
     list-style: none;
+    transition: all 0.3s;
+}
 
+.nav-item:hover{
+    transform: scale(1.2);
 }
 
 .nav-item a{
@@ -29,21 +33,33 @@
     font-size: 1.25rem;
     font-family: Rubik, sans-serif;
     color: white;
+    transition: all 0.3s;
+}
+
+.nav-item a:hover{
+    color: yellow;
+    text-decoration: underline;
 }
 
 .nav-ul{
     display: flex;
     gap: 60px; 
-    margin-right: 40px;
 }
 
 .nav-bar img{
-    width: 100%;
+    width: auto;
+    height: 4.375rem;
+    transition: all 0.3s;
+}
+
+.nav-bar img:hover{
+    transform: scale(1.2);
 }
 
 .nav-logo{
-    width: 10%;
-    margin-right: auto;   
+    cursor: pointer;
+    position: relative;
+    right: 18.75rem;
 }
 
 /* MAIN */
@@ -53,11 +69,11 @@
     flex-direction: column;
     background-image: url("../assets/img/banner2.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     width: 100%;
-    height: 20rem;
+    height: 40rem;
     align-items: center;
     justify-content: center;
+    background-position: 100%;
 }
 
 
@@ -87,6 +103,7 @@
     background-color: #080E26;
     align-items: center;
     justify-content: center;
+    height: 46.875rem;
 } 
 .contenedor-secundario h2{
     font-size: 2.8125rem;
@@ -115,12 +132,12 @@
     grid-template-areas:
     "item1 item2"
     "item3 item4"
-    
-    
+
+
     ;
 }
 
-.ctd-parrafos h3{
+.ctd-parrafos h2{
     color: white;
     font-size: 1.875rem;
     margin-bottom: 1.25rem;
@@ -131,6 +148,80 @@
     padding: 1.25rem;
     border-radius: 1.25rem;
 }
+
+
+.contenedor-tercero{
+    background-image: url("../assets/img/banner4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.ctd-article{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 62.5rem;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 3.125rem;
+    grid-template-columns: repeat(2, 27.625rem);
+    grid-template-rows: repeat(2, 15.5rem);
+    grid-template-areas: 
+    
+    "item-1 item-1"
+    "item-2 item-3"
+    
+    ;
+}
+
+.item-1{
+    grid-area: item-1;
+    border-radius: 3.125rem 3.125rem 0 0;
+}
+
+.item-2{
+    grid-area: item-2;
+    border-radius: 0 0 0 3.125rem;
+}
+
+.item-3{
+    grid-area: item-3;
+    border-radius: 0 0 3.125rem 0;
+}
+
+
+.item-secu{
+    height: 18.875rem;
+    color: white;
+    background-color: #080E26;
+    margin-top: 31.25rem;
+    overflow: hidden;
+    padding: 3.125rem;
+}
+
+.item-secu h3{
+    margin-bottom: 1.25rem;
+}
+
+.item-secu h4{
+    margin-bottom: 1.25rem;
+}
+
+.item-secu p{
+    font-size: 1.125rem;
+}
+
+
+.contenedor-tercero h3{
+    font-size: 3.125rem;
+}
+
+.contenedor-tercero h4{
+    font-size: 2.5rem;
+}
+
 
 .contenedor-principal-b{
     display: flex;
