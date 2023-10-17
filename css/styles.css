@@ -1,28 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@300&display=swap');
-
-
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/*  HEADER*/
+
+/* NAV BAR */
+.nav-bar-b{
+    background-color: #072752;;
+}
 
 
 .nav-bar{
-    background-color: #072752;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 4.6875rem;
+    flex-wrap: wrap;
     width: 100%;
+    padding: 1.25rem;
+    align-items: center;
 }
 
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.nav-bar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+/* NAV HOVERS */
 
 .nav-item{
-    list-style: none;
     transition: all 0.3s;
 }
 
@@ -31,117 +44,58 @@
 }
 
 .nav-item a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-family: Rubik, sans-serif;
-    color: white;
     transition: all 0.3s;
 }
 
 .nav-item a:hover{
     color: yellow;
-    text-decoration: underline;
-}
 
-.nav-ul{
-    display: flex;
-    gap: 60px;
-    flex-wrap: wrap; 
-}
-
-.nav-bar img{
-    width: auto;
-    height: 4.375rem;
-    transition: all 0.3s;
-}
-
-.nav-bar img:hover{
-    transform: scale(1.2);
-}
-
-.nav-logo{
-    cursor: pointer;
-    position: relative;
-    right: 18.75rem;
-}
-
-.nav-logo-1{
-    height: 4.375rem;
-    width: 100%;
-}
-
-.bg-c{
-    background-color: #072752;
 }
 
 /* MAIN */
 
+/* INDEX CTD PRINCIPAL*/
+.section-principal{
+    background-image: url(../assets/img/banner2.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 6.25rem;
+}
 
-.contenedor-principal{
+.section-text{
+    width: 31.25rem;
+    margin: 0 auto;
+}
+
+.section-text h1{
+    font-size: 3.125rem;
+}
+
+.section-text p{
+    font-size: 1.875rem;
+}
+
+/* INDEX CTD SECUDARIO */
+
+.section-secundaria{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    background-image: url("../assets/img/banner2.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 40rem;
-    align-items: center;
-    justify-content: center;
-    background-position: 100%;
-}
-
-
-.contenedor-principal h1{
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 1.25rem;
-    font-family: Roboto, sans-serif;
-}
-
-.contenedor-principal p{
-    font-size: 1.25rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-
-.ctn-inicio{
-    width: 56.25rem;   
-}
-
-
-
-.contenedor-secundario{
-    display: flex;
-    padding: 12.5rem;
-    width: 100%;
     background-color: #080E26;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} 
-.contenedor-secundario h2{
-    font-size: 2.8125rem;
-    font-family: Rubik, sans-serif;
     color: white;
-    margin-bottom: 1.25rem;
+    padding: 5rem;
+    width: 100%;
 }
 
-.contenedor-secundario p{
-    color: white;
-    font-size: 1.25rem;
-    font-family: 'Times New Roman', Times, serif;
-}
 
-.ctd-titulo{
-    width: 56.25rem;
-}
-
-.ctd-parrafos{
-    margin-top: 1.25rem;
+.ctd-items{
     display: grid;
-    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
     gap: 1.25rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 37.25rem);
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
     "item1 item2"
@@ -151,183 +105,86 @@
     ;
 }
 
-.ctd-parrafos h2{
-    color: white;
-    font-size: 1.875rem;
-    margin-bottom: 1.25rem;
-}
-
-.item{
+.items{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #2A3659;
     padding: 1.25rem;
     border-radius: 1.25rem;
-}
-
-
-.contenedor-tercero{
-    background-image: url("../assets/img/banner4.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-
-
-
-.ctd-articles-1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.ctd-articles-2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.item-1{
-    border-radius: 3.125rem 3.125rem 0 0;
-    width: 75rem;
-    margin-top: 4.375rem;
-}
-
-.item-2{
-    border-radius: 0 0 0 3.125rem;
-    width: 37.5rem;
-}
-
-.item-3{
-    border-radius: 0 0 3.125rem 0;
-    width: 37.5rem;
-    margin-bottom: 4.375rem;
-}
-
-
-.item-secu{
     height: 100%;
-    color: white;
-    background-color: #080E26;
-    overflow: hidden;
-    padding: 4.375rem;
+    width: 100%;
+    margin-top: 2.5rem;
 }
 
-.item-secu h3{
-    margin-bottom: 1.25rem;
+.items h3{
+    font-size: 2.5rem;
 }
 
-.item-secu h4{
-    margin-bottom: 1.25rem;
-}
-
-.item-secu p{
-    font-size: 1.125rem;
+.items p{
+    font-size: 1.875rem;
 }
 
 
-.contenedor-tercero h3{
+.item0{
+    display: flex;
+    flex-wrap: wrap;
+    width: 37.25rem;
+    margin: 0 auto;
+}
+
+.item0 h2{
     font-size: 3.125rem;
 }
 
-.contenedor-tercero h4{
-    font-size: 2.5rem;
+.item0 p{
+    font-size: 1.875rem;
 }
 
+/* INDEX CTD TERCEARIO */
 
-.contenedor-principal-b {
+.section-tercearia{
     display: flex;
-    background-image: url("../assets/img/banner-b1.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 30rem;
-    align-items: center;
-    justify-content: center;
+    background-image: url("../assets/img/banner4.png");
+    background-position: 100%;
     background-size: cover;
-    flex-wrap: wrap;
-  }
-  
-  .contenedor-principal-b h1 {
-    font-size: 2.5rem;
-    color: white;
-    margin-left: 1.875rem;
-    font-family: Roboto;
-  }
-  
-  .contenedor-secundario-b-t {
-    width: 100%; 
-    height: 100%;
-    margin: .625rem auto;
-    padding: 6.25rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .contenedor-secundario-b-t h2 {
-    font-size: 2.8125rem;
-    font-family: Rubik;
-    color: white;
-    margin-bottom: 1.25rem;
-  }
-  
-  .contenedor-secundario-b-t p {
-    color: white;
-    font-size: 1.25rem;
-    width: 65%;
-  }
-  
-  .contenedor-secundario-b {
-    display: flex;
-    width: 100%;
-    height: auto; 
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .fondo-b {
-    background-color: #474b4e;
-    width: 100%;
-    
-  }
-  
-  .contenedor-secu-b-p {
-    background-color: #080E26;
-    width: 100%; 
-    border-radius: 1.875rem;
-    margin: 2.5rem auto;
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  
-  .ctn-secu div img {
-    width: 12.5rem; 
-    margin-bottom: 1.5625rem;
-    transition: all 0.3s;
-    border-radius: 1.875rem;
-  }
-  
-  .ctn-secu div img:hover {
-    transform: scale(1.2);
-    filter: opacity(0.7);
-  }
-  
-  .ctn-secu {
-    width: 25rem; 
-    height: auto; 
-    color: white;
-    padding: 20px;
-    
-  }
-  
-  .ctn-secu h3 {
-    font-size: 1.5625rem;
-    margin-bottom: .625rem;
-  }
+    padding: 3.125rem;
+}
 
-  .ctn-secu p{
-    width: 12.5rem;
-    font-size: 1.25rem;
-  }
+.sct-trc-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5625rem;
+    background-color: #080E26;
+    color: white;
+    border-radius: 1.25rem;
+    gap: 2.5rem;
+
+}
+
+.sct-trc-main-2{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.ct-tcr-1{
+    display: flex;
+}
+
+.sct-tcr-1 h3{
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.sct-tcr-1 h4{
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.sct-tcr-1 p{
+    font-size: 1.875rem;
+}
+
+/* PAG CONTACTO BOOTSTRAP */
 
 .contenedor-principal-c h1{
     font-size: 2.5rem;
@@ -338,92 +195,22 @@
     padding-top: 1.875rem;
 }
 
-.fondo-c{
-    background-color: #080E26;
+.fondo-b{
+    background-color: #072752;
 }
 
-.contenedor-principal-n h1{
-    font-size: 2.5rem;
-    color: #034C8C;
-    margin-left: 1.875rem;
-    font-family: Roboto;
-    text-align: center;
+.bg-c{
+    background-color: #072752;
 }
 
-.contenedor-secundario-n h2{
-    font-size: 2.8125rem;
-    font-family: Rubik;
-    text-align: center;
-    color: blue;
-    padding: 1.25rem;
+.nav-logo-1{
+    height: 4.375rem;
+    width: 100%;
 }
 
-.ctn-c{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 6.25rem;
-}
-
-.ctn-c h5{
-    color: white;
-}
-
-.ctn-c p{
-    color: white;
-}
-
-.contenedor-secundario-n p{
-    font-size: 1.6875rem;
-}
 
 .card{
     background-color: #080E26;
-}
-
-
-.contenedor-principal-t h1{
-    font-size: 2.5rem;
-    color: #034C8C;
-    margin-left: 1.875rem;
-    font-family: Roboto;
-    text-align: center;
-}
-
-
-.card-container {
-    display: flex;
-    width: 100%;
-    /* flex-wrap: wrap; */
-    height: 31.25rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.card1 {
-    width: 18.75rem;
-    height: 25rem;
-    border-radius: 1.25rem;
-    overflow: hidden;
-    box-shadow: 20px 20px 5px gray;
-    background-color: lightblue;
-}
-
-.card1 div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card1 div video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card1 div{
-    width: 100%;
-    height: 18.75rem;
 }
 
 
@@ -433,237 +220,262 @@
     color: white;
 }
 
-
-
-
-
-/* Footer */
-
-.nav-ul-footer{
+.ctn-c{
     display: flex;
-    gap: 60px; 
-    list-style: none;
-    justify-content: center;
-    padding: 1.875rem;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 6.25rem;
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: white;
+}
+
+.contenedor-secundario-n p{
+    font-size: 1.6875rem;
+}
+
+.fondo-c{
+    background-color: #080E26;
+}
+
+
+/* PAG BENEFICIOS */
+
+.section-principal-b{
+    background-image: url("../assets/img/banner-b1.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 6.25rem;
+    color: white;
+    display: flex;
+    height: 31.25rem;
+}
+
+
+.section-principal-b h1{
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.section-secundaria-b{
+    display: flex;
     flex-wrap: wrap;
-}
-
-.nav-item-f a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-family: Rubik;
+    padding: 1.25rem;
     color: white;
-    
+    background-color: #474b4e;
+    justify-content: center;
+}
+
+.section-secundaria-b-2{
+    background-color: #080E26;
+    border-radius: 50px;
+    padding: 1.5625rem;
+}
+
+.ctd-secundario-b{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 1.875rem;
 }
 
 
-.nav-bar-footer p{
+.ctd-secundario-b h2{
+    font-size: 2.5rem;
+}
+
+.ctd-secundario-b p{
+    font-size: 1.5625rem;
+
+}
+
+.ctd-cards-b{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.cards{
+    width: 18.75rem;
+}
+
+.cards h3{
+    font-size: 2.1875rem;
+}
+
+.cards p{
+    font-size: 1.5625rem;
+    padding: .625rem;
+}
+
+.cards img {
+    width: 12.5rem; 
+    margin-bottom: 1.5625rem;
+    transition: all 0.3s;
+    border-radius: 1.875rem;
+}
+
+.cards img:hover {
+    transform: scale(1.2);
+    filter: opacity(0.7);
+}
+
+
+/* PAG TUTORIAL */
+
+.section-tutorial{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.125rem;
     color: white;
-    text-align: center;
+    background-color: #080E26;
 }
 
 
-.nav-bar-footer{
-    background-color: #034C8C;
+
+.section-tutorial h1{
+    font-size: 2.5rem;
 }
+
+.section-tutorial ol li{
+    font-size: 1.5625rem;
+    margin: 9.375rem;
+    background-color: #072752;
+    padding: 1.875rem;
+    border-radius: 1.875rem;
+    box-shadow: .3125rem .3125rem .3125rem white;
+    transition: all 0.3s;
+}
+
+
+.section-tutorial ol{
+    list-style: none;
+}
+
+.section-tutorial ol li:hover{
+    transform: scale(1.2);
+}
+
+
+
+
 
 
 /* MEDIA QUERYS */
 
-@media (max-width: 768px) {
-    .ctd-parrafos {
-      grid-template-columns: repeat(1, 20.5rem);
-      grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4";
-    }
+@media (max-width: 1024px){
 
-    .item-1{
-        width: 37.5rem;
-    }
-
-    .item-2{
-        border-radius: 0 0 1.25rem 0;
-    }
-
-    .item-3{
-        border-radius: 0 0 1.25rem 1.25rem;
-    }
-
-    .contenedor-principal{
-        background-position: center;
-        background-size: 100%;
-        height: 18.75rem;
-        
-    }
-    .nav-bar {
-        flex-direction: column; 
-        height: auto; 
-        padding: 1rem;
-    }
-    
-    .nav-logo {
-        display: block; 
-        margin-top: 1rem;
-        right: 0;
-
-
-    }
-
-    .contenedor-secundario-b{
-        width: 43.75rem;
-    }
-
-    .contenedor-secundario-b-t{
-        width: 31.25rem;
-        padding: 1.875rem;
-        position: relative;
-        left: -6.9375rem;
-    }
-}
-
-
-
-@media (max-width: 1024px) {
-    .ctd-parrafos {
-      grid-template-columns: repeat(1, 20.5rem);
-      grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4";
-    }
-
-    .item-1{
-        width: 37.5rem;
-    }
-
-    .item-2{
-        border-radius: 0 0 1.25rem 0;
-    }
-
-    .item-3{
-        border-radius: 0 0 1.25rem 1.25rem;
-    }
-
-}
-
-
-
-
-@media (max-width: 375px){
-    .ctd-parrafos {
-        grid-template-columns: repeat(1, 16.5rem);
+    .ctd-items {
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
         "item1"
         "item2"
         "item3"
         "item4";
     }
-    }
-
-   
-
-
-    .contenedor-principal p{
-        width: 48.125rem;
-        
 }
 
 
 
+@media (max-width: 768px){
+    
 
-@media (max-width: 390px){
-    .contenedor-principal{
-        background-position: center;
-        background-size: 100% 100%;
-        height: 12.5rem;
+/* INDEX CTD PRINCIPAL */
+
+    .section-principal{
+        padding: 2.5rem;
+    }
+
+
+    .section-text{
         width: 100%;
-        justify-content: center;
-        padding: 1.875rem;
-
-
-    }
-    .ctn-secu {
-        width: 26rem; 
-        height: 100%; 
-        color: white;
-        padding: 20px;
-        
-        
-      }
-      .ctn-secu p{
-        width: 25rem; 
-        height: 100%; 
-        color: white;
-        padding: 20px;
-        position: relative;
-        left: -12rem
-        
-        
-      }
-
-      .ctn-secu div img{
-        position: relative;
-        left: -11rem;
-      }
-      
-      .ctn-secu h3{
-        position: relative;
-        left: -11rem;
-      }
-}
-
-
-
-
-
-
-
-
-@media (max-width: 320px){
-    .ctd-parrafos {
-        grid-template-columns: repeat(1);
-        grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4";
-        
-    
-    }
-    .item{
-        width: 12.5rem;
     }
 
-   
-    .contenedor-principal p{
-        width: 300px;
+    .section-text h1{
+        font-size: 2.5rem;
+    }
+    
+    .section-text p{
+        font-size: 1.0625rem;
+    }
+
+    .items h3{
+        font-size: 1.125rem;
+    }
+    
+    .items p{
+        font-size: 1rem;
+    }
+
+    .item0 h2{
+        font-size: 1.5625rem;
+    }
+
+    .item0 p{
+    font-size: 1.125rem ; 
+    }
+
+    .nav-bar ul li a{
+        font-size: 1.25rem;
+    }
+
+
+
+
+/* INDEX CTD SECUNDARIO */
+
+.ctd-items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "item1"
+    "item2"
+    "item3"
+    "item4";
+}
+
+/* INDEX CTD TERCEARIO */
+
+
+.sct-trc-main-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.sct-tcr-1 h3{
+    font-size: 1.875rem;
+    margin-bottom: .625rem;
+}
+
+.sct-tcr-1 h4{
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.sct-tcr-1 p{
+    font-size: 1rem;
+}
+
+/* PAGINA BENEFICIOS */
+.ctd-cards-b{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 100%;
+}
+
+
 
 }
-    .contenedor-principal{
-        width: 100%;
-        height: 15.5rem;
-        background-size: 100% 100%;
-        padding: .625rem;
-        
-    
 
-}
-.ctn-secu {
-    width: 23rem; 
-    height: 100%; 
-    color: white;
-    padding: 20px;
-    
-    
-  }
-
-  .ctn-secu p{
-    width: 18.75rem;
-    
-    
-  }
-}
