@@ -346,6 +346,7 @@
 
 .section-tutorial h1{
     font-size: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .section-tutorial ol li{
@@ -355,7 +356,7 @@
     border-radius: 1.875rem;
     box-shadow: .3125rem .3125rem .3125rem white;
     transition: all 0.3s;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.75rem;
 }
 
 
@@ -369,10 +370,31 @@
 
 /* PAG NOSOTROS */
 
+.contenedor-base{
+    display: flex;
+    margin: 0 auto;
+    gap: 9.375rem;
+    justify-content: center;
+    margin: 3.125rem;
+}
+
+
 .section-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: #2A3659;
-    height: 100%;
-    padding: 8.125rem;
+    color: white;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+.contenedor-texto{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #080E26;
+    padding: 3.125rem;
+    border-radius: 1.875rem;
 }
 
 
@@ -381,7 +403,7 @@
     height: 25rem;
     border-radius: 1.25rem;
     overflow: hidden;
-    box-shadow: 1px 1px .625rem black;
+    box-shadow: 1px 1px .625rem white;
     margin: 0 auto;
 }
 
@@ -393,9 +415,15 @@
 
 .section-nosotros h1{
     font-size: 3.125rem;
-    text-align: center;
     color: white;
-    margin-bottom: .625rem;
+    margin: 1.25rem;
+    text-align: center;
+}
+
+.section-nosotros p{
+    font-size: 1.5625rem;
+    margin: 1.25rem;
+    align-self: center;
 }
 
 
