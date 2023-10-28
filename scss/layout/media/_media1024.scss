@@ -1,0 +1,10 @@
+@media (max-width: 1024px){
+.section-secundaria div{
+    grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4";
+    }
+}

@@ -1,0 +1,54 @@
+.contenedor-principal-c{
+    h1{
+        font-size: 2.5rem;
+        color: white;
+        margin-left: 1.875rem;
+        font-family: Roboto;
+        text-align: center;
+        padding-top: 1.875rem;
+    }
+}
+.bg-c{
+    background-color: $bg-c;
+}
+
+.nav-logo-1{
+    height: 4.375rem;
+    width: 100%;
+}
+
+
+.card{
+    background-color: $card-bg;
+}
+
+
+.formulario{
+    margin: 0 auto;
+    padding: 6.25rem;
+    color: white;
+}
+
+.ctn-c{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 6.25rem;
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: white;
+}
+
+.contenedor-secundario-n
+    p{
+    font-size: 1.6875rem;
+}
+
+.fondo-c{
+    background-color: #080E26;
+}

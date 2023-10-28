@@ -1,0 +1,15 @@
+@mixin flex($direction,$wrap,$justify,$align,$gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin nav-ul($style,$gap,$wrap){
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}

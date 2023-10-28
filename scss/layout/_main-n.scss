@@ -1,0 +1,34 @@
+.contenedor-base{
+    display: flex;
+    margin: 0 auto;
+    gap: 9.375rem;
+    justify-content: center;
+    margin: 3.125rem;
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $contenedor-texto-bg;
+        padding: 3.125rem;
+        border-radius: 1.875rem;
+    }
+}.section-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:$section-nosotros-bg;
+    color: white;
+    margin: 0 auto;
+    padding: 2.5rem;
+    h1{
+        font-size: 3.125rem;
+        color: white;
+        margin: 1.25rem;
+        text-align: center;
+    }
+    p{
+    font-size: 1.5625rem;
+    margin: 1.25rem;
+    align-self: center;
+    }
+}
+

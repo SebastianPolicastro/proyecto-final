@@ -1,0 +1,25 @@
+.nav-bar{
+    @include flex(row, wrap, center, center, none);
+    padding: 1.25rem;
+    width: 100%;
+    ul{
+        @include nav-ul(none, 1.25rem, wrap)}
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.7rem;
+        }
+}
+
+.nav-item{
+    transition: all 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        a{
+            transition: all 0.3s;
+            &:hover{
+                color: yellow;
+            }
+        }
+        }
+}

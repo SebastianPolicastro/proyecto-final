@@ -1,0 +1,45 @@
+.section-principal-b{
+    background-image: $section-principal-b-bg;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 6.25rem;
+    color: white;
+    display: flex;
+    height: 31.25rem;
+    h1{
+        margin: 0 auto;
+        font-size: 2.5rem;
+    }
+}
+
+.section-secundaria-b{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+    color: white;
+    background-color: #474b4e;
+    justify-content: center;
+    section{
+        width: 75rem;
+        background-color: $section-secu-b2-bg;
+        border-radius: 50px;
+        padding: 1.5625rem;
+        article{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1.875rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.5625rem;
+        }
+    }
+}
+
+
+
+
+
