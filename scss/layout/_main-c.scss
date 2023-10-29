@@ -26,14 +26,16 @@
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 6.25rem;
-}
+    div{        
+        background-color: $fondo-b;
+        }
+    }
+
 .card-body{
     color: white;
 }
-.contenedor-secundario-n
-    p{
-    font-size: 1.6875rem;
-}
+
 .fondo-c{
-    background-color: #080E26;
+    background-color: $fondo-b;
 }
+

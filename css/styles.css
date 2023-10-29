@@ -193,13 +193,12 @@ header, footer {
   justify-content: space-around;
   padding-bottom: 6.25rem;
 }
+.ctn-c div {
+  background-color: #080E26;
+}
 
 .card-body {
   color: white;
-}
-
-.contenedor-secundario-n p {
-  font-size: 1.6875rem;
 }
 
 .fondo-c {
@@ -305,57 +304,6 @@ header, footer {
 }
 .nav-item:hover a:hover {
   color: yellow;
-}
-
-.contenedor-principal-c h1 {
-  font-size: 2.5rem;
-  color: white;
-  margin-left: 1.875rem;
-  font-family: Roboto;
-  text-align: center;
-  padding-top: 1.875rem;
-}
-
-.bg-c {
-  background-color: #072752;
-}
-
-.nav-logo-1 {
-  height: 4.375rem;
-  width: 100%;
-}
-
-.card {
-  background-color: #080E26;
-}
-
-.formulario {
-  margin: 0 auto;
-  padding: 6.25rem;
-  color: white;
-}
-
-.ctn-c {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 6.25rem;
-}
-
-.card-title {
-  color: white;
-}
-
-.card-text {
-  color: white;
-}
-
-.contenedor-secundario-n p {
-  font-size: 1.6875rem;
-}
-
-.fondo-c {
-  background-color: #080E26;
 }
 
 .ctd-cards-b {
