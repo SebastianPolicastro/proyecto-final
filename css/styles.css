@@ -22,13 +22,12 @@ header, footer {
 }
 .section-principal div h1 {
   font-size: 3.125rem;
-  background-color: rgba(0, 0, 0, 0.343);
   color: white;
   padding: 1.25rem;
   text-align: center;
 }
 .section-principal div p {
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
   color: white;
 }
 
@@ -75,7 +74,7 @@ header, footer {
   font-size: 3.125rem;
 }
 .item0 p {
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
 }
 
 .section-tercearia {
@@ -104,7 +103,7 @@ header, footer {
   margin-bottom: 1.25rem;
 }
 .sct-trc-main article p {
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
 }
 
 .sct-trc-main-2 {
@@ -252,7 +251,7 @@ header, footer {
   padding: 1.25rem;
 }
 .section-tutorial h1 {
-  font-size: 2.5rem;
+  font-size: 3.125rem;
   margin-bottom: 1.25rem;
 }
 .section-tutorial ol {
@@ -352,17 +351,16 @@ header, footer {
   }
 }
 @media (max-width: 768px) {
-  .section-principal {
-    padding: 2.5;
-  }
   .section-principal div {
     width: 100%;
   }
   .section-principal div h1 {
-    font-size: 2.5rem;
+    font-size: 3.125rem;
+    position: relative;
+    right: 1.25rem;
   }
   .section-principal div p {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
   .section-principal div article h3 {
     font-size: 1.125rem;
@@ -371,7 +369,7 @@ header, footer {
     font-size: 1rem;
   }
   .item0 h2 {
-    font-size: 1.5625rem;
+    font-size: 1.875rem;
   }
   .item0 p {
     font-size: 1.125rem;
@@ -380,8 +378,11 @@ header, footer {
     font-size: 1.25rem;
   }
   .sct-trc-main article h3 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     margin-bottom: 0.625rem;
+  }
+  .sct-trc-main article p {
+    font-size: 1.25rem;
   }
   .sct-trc-main-2 {
     display: flex;
@@ -389,11 +390,11 @@ header, footer {
     gap: 2.5rem;
   }
   .sct-trc-main-2 article h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     margin-bottom: 1.25rem;
   }
   .sct-trc-main-2 article p {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   .ctd-cards-b {
     display: flex;
@@ -402,13 +403,26 @@ header, footer {
   .ctd-cards-b article {
     width: 100%;
   }
+  .section-secundaria div article h3 {
+    font-size: 1.5625rem;
+  }
+  .section-secundaria div article p {
+    font-size: 1.25rem;
+  }
 }
 @media (max-width: 320px) {
   .section-secundaria div article p {
-    width: 9.375;
+    width: 9.375rem;
   }
   .section-secundaria .item0 p {
     width: 14.375rem;
+  }
+  .section-principal div h1 {
+    font-size: 1.875rem;
+  }
+  .section-principal div p {
+    font-size: 1.25rem;
+    width: 12.5rem;
   }
 }
 

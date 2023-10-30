@@ -1,13 +1,14 @@
 @media (max-width: 768px){
     .section-principal{
-        padding: 2.5;
         div{
             width: 100%;
             h1{
                 font-size: map-get($size, xl);
+                position: relative;
+                right: 1.25rem;
             }
             p{
-                font-size: 1.0625rem;
+                font-size: 1.25rem;
             }
             article{
                 h3{
@@ -21,7 +22,7 @@
     }
     .item0{
         h2{
-            font-size: 1.5625rem;
+            font-size: 1.875rem;
         }
         p{
             font-size: 1.125rem;
@@ -39,8 +40,11 @@
     .sct-trc-main{
         article{
             h3{
-                font-size: 1.875rem;
+                font-size: 1.5rem;
                 margin-bottom: .625rem;
+            }
+            p{
+                font-size: 1.25rem;
             }
         }
     }
@@ -50,11 +54,11 @@
         gap: 2.5rem;
         article{
             h4{
-                font-size: 1.125rem;
+                font-size: 1.25rem;
                 margin-bottom: 1.25rem;
             }
             p{
-                font-size: 1rem;
+                font-size: 1.125rem;
             }
         }
     }
@@ -63,6 +67,18 @@
         flex-wrap: wrap;
         article{
             width: 100%;
+        }
+    }
+    .section-secundaria{
+        div{
+            article{
+                h3{
+                    font-size: 1.5625rem;
+                }
+                p{
+                    font-size: 1.25rem;
+                }
+            }
         }
     }
 

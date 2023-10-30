@@ -3,7 +3,7 @@
         div{
             article{
                 p{
-                    width: 9.375;
+                    width: 9.375rem;
                 }
             }
         }
@@ -13,4 +13,15 @@
             }
         }
     }
+        .section-principal{
+            div{
+                h1{
+                    font-size: map-get($size, lg );
+                }
+                p{
+                    font-size: 1.25rem;
+                    width: 12.5rem;
+                }
+            }
+        }
 }
