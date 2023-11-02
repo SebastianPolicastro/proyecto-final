@@ -9,7 +9,7 @@
 
 @mixin nav-ul($style,$gap,$wrap){
     display: flex;
-    list-style: none;
-    gap: 1.25rem;
-    flex-wrap: wrap;
+    list-style: $style;
+    gap: $gap;
+    flex-wrap: $wrap;
 }

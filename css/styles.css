@@ -291,31 +291,57 @@ header, footer {
   justify-content: center;
   align-items: center;
   gap: none;
-  padding: 1.25rem;
-  width: 100%;
 }
 .nav-bar ul {
   display: flex;
   list-style: none;
-  gap: 1.25rem;
+  gap: 2.1875rem;
   flex-wrap: wrap;
 }
-.nav-bar a {
-  text-decoration: none;
-  color: white;
+.nav-bar li {
   font-size: 1.7rem;
-}
-
-.nav-item {
+  padding: 1.25rem;
   transition: all 0.3s;
 }
-.nav-item:hover {
+.nav-bar li:hover {
   transform: scale(1.2);
 }
-.nav-item:hover a {
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
   transition: all 0.3s;
 }
-.nav-item:hover a:hover {
+.nav-bar li a:hover {
+  color: yellow;
+}
+
+.nav-bar-f {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+.nav-bar-f ul {
+  display: flex;
+  list-style: none;
+  gap: 6.25rem;
+  flex-wrap: wrap;
+}
+.nav-bar-f li {
+  font-size: 1.7rem;
+  padding: 1.25rem;
+  transition: all 0.3s;
+}
+.nav-bar-f li:hover {
+  transform: scale(1.2);
+}
+.nav-bar-f li a {
+  color: white;
+  transition: all 0.3s;
+}
+.nav-bar-f li a:hover {
   color: yellow;
 }
 
