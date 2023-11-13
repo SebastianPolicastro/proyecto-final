@@ -31,6 +31,9 @@
     .nav-bar{
         ul{
             li{
+                &:hover{
+                    transform: none;
+                }
                 a{
                     font-size: 1.25rem;
                 }
@@ -81,5 +84,5 @@
             }
         }
     }
-
 }
+

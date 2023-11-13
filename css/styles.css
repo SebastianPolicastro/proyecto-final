@@ -218,16 +218,28 @@ header, footer {
   background-color: #080E26;
 }
 
+.btn {
+  background-color: #2A3659;
+}
+
+.navbar-toggler-icon {
+  background-color: #072752;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .contenedor-base {
   display: flex;
-  margin: 0 auto;
+  width: 81.25rem;
   gap: 9.375rem;
-  justify-content: center;
-  margin: 3.125rem;
+  margin: 3.125rem auto;
 }
 .contenedor-base article {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   background-color: #080E26;
   padding: 3.125rem;
   border-radius: 1.875rem;
@@ -282,6 +294,16 @@ header, footer {
 }
 .section-tutorial ol li:hover {
   transform: scale(1.2);
+}
+
+.navbar-nav {
+  transform: none;
+}
+.navbar-nav li {
+  transform: none;
+}
+.navbar-nav li a {
+  transform: none;
 }
 
 .nav-bar {
@@ -388,6 +410,10 @@ header, footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "item1" "item2" "item3" "item4";
   }
+  .contenedor-base {
+    flex-wrap: wrap;
+    width: 31.25rem;
+  }
 }
 @media (max-width: 768px) {
   .section-principal div {
@@ -412,6 +438,9 @@ header, footer {
   }
   .item0 p {
     font-size: 1.125rem;
+  }
+  .nav-bar ul li:hover {
+    transform: none;
   }
   .nav-bar ul li a {
     font-size: 1.25rem;
@@ -462,6 +491,51 @@ header, footer {
   .section-principal div p {
     font-size: 1.25rem;
     width: 12.5rem;
+  }
+  .contenedor-base {
+    margin: 50px 0;
+    width: 12.5rem;
+  }
+  .contenedor-base article {
+    width: 15.625rem;
+  }
+  .contenedor-base article p {
+    width: 9.375rem;
+  }
+  .section-nosotros h1 {
+    width: 12.5rem;
+  }
+  .section-nosotros p {
+    width: 15.625rem;
+  }
+  .card-nosotros {
+    box-shadow: none;
+    width: 6.25rem;
+  }
+  .card-nosotros div iframe {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .contenedor-base {
+    width: 12.5rem;
+  }
+  .contenedor-base article {
+    width: 15.625rem;
+  }
+  .contenedor-base article p {
+    width: 9.375rem;
+  }
+  .card-nosotros {
+    box-shadow: none;
+    width: 6.25rem;
+    height: 0.3125rem;
+  }
+  .card-nosotros div {
+    height: 0.625rem;
+  }
+  .card-nosotros div iframe {
+    display: none;
   }
 }
 .error {

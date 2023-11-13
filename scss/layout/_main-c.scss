@@ -39,3 +39,15 @@
     background-color: $fondo-b;
 }
 
+.btn{
+    background-color:  $bg-items;
+}
+
+.navbar-toggler-icon{
+    background-color: $bg-c;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}

@@ -1,3 +1,15 @@
+.navbar-nav{
+    transform: none;
+        li{
+            transform: none;
+            a{
+                transform: none;
+            }
+            }
+        }
+
+
+
 .nav-bar{
     @include flex(row, wrap, center, center, none);
     ul{

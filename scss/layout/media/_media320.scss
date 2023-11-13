@@ -24,4 +24,33 @@
                 }
             }
         }
+        .contenedor-base{
+            margin: 50px 0;
+            width: 12.5rem;
+            article{
+                width: 15.625rem;
+                p{
+                    width: 9.375rem;
+                }
+            }
+        }
+        .section-nosotros{
+            h1{
+                width: 12.5rem;
+            }
+            p{
+                width: 15.625rem;
+            }
+        }
+        .card-nosotros{
+            box-shadow: none;
+            width: 6.25rem;
+            div{
+                iframe{
+                    display: none;
+                }
+            }
+        }
 }
+
+

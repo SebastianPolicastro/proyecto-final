@@ -1,0 +1,22 @@
+@media (max-width: 425px){
+    .contenedor-base{
+        width: 12.5rem;
+        article{
+            width: 15.625rem;
+            p{
+                width: 9.375rem;
+            }
+        }
+    }
+    .card-nosotros{
+        box-shadow: none;
+        width: 6.25rem;
+        height: .3125rem;
+        div{
+            height: .625rem;
+            iframe{
+                display: none;
+            }
+        }
+    }
+}
