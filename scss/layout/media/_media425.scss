@@ -19,4 +19,35 @@
             }
         }
     }
+    .nav-bar{
+        display: none;
+        ul{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 3.125rem;
+            left: 0rem;
+            width: 100%;
+            background-color: #333;
+            z-index: 1;
+            li{
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .button{
+        display: block;
+        font-size: 2.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    #toggle{
+        display: none;
+        transition: all 0.3s;
+    }
+    #toggle:checked + .button + .nav-bar{
+        display: block;
+    }
+
 }

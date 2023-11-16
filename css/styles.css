@@ -231,6 +231,10 @@ header, footer {
   box-shadow: none;
 }
 
+.container-fluid {
+  width: 62.5rem;
+}
+
 .contenedor-base {
   display: flex;
   width: 81.25rem;
@@ -296,16 +300,6 @@ header, footer {
   transform: scale(1.2);
 }
 
-.navbar-nav {
-  transform: none;
-}
-.navbar-nav li {
-  transform: none;
-}
-.navbar-nav li a {
-  transform: none;
-}
-
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -365,6 +359,14 @@ header, footer {
 }
 .nav-bar-f li a:hover {
   color: yellow;
+}
+
+#toggle {
+  display: none;
+}
+
+.button {
+  display: none;
 }
 
 .ctd-cards-b {
@@ -477,6 +479,12 @@ header, footer {
   .section-secundaria div article p {
     font-size: 1.25rem;
   }
+  .section-tutorial ol {
+    list-style: none;
+  }
+  .section-tutorial ol li:hover {
+    transform: none;
+  }
 }
 @media (max-width: 320px) {
   .section-secundaria div article p {
@@ -536,6 +544,36 @@ header, footer {
   }
   .card-nosotros div iframe {
     display: none;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.125rem;
+    left: 0rem;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+  .nav-bar ul li {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .button {
+    display: block;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  #toggle {
+    display: none;
+    transition: all 0.3s;
+  }
+  #toggle:checked + .button + .nav-bar {
+    display: block;
   }
 }
 .error {

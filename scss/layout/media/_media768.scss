@@ -83,6 +83,17 @@
                 }
             }
         }
+        }
+        .section-tutorial{
+            ol{
+                list-style: none;
+                li{
+                    &:hover{
+                        transform: none;
+                    }
+                }
+            }   
+        }
     }
-}
+
 
