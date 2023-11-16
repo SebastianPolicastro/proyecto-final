@@ -28,7 +28,7 @@
             top: 3.125rem;
             left: 0rem;
             width: 100%;
-            background-color: #333;
+            background-color: $header-color-bg;
             z-index: 1;
             li{
                 width: 100%;
@@ -49,5 +49,7 @@
     #toggle:checked + .button + .nav-bar{
         display: block;
     }
-
+    .navbar{
+        display: flex;
+    }
 }
